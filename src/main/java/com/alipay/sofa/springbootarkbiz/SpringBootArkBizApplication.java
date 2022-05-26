@@ -12,7 +12,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class SpringBootArkBizApplication {
 
 	public static void main(String[] args) {
-		SpringApplicationBuilder builder = new SpringApplicationBuilder(SpringBootArkBizApplication.class).web(WebApplicationType.NONE);
+		SpringApplicationBuilder builder = new SpringApplicationBuilder(SpringBootArkBizApplication.class).web(WebApplicationType.SERVLET);
 		ConfigurableApplicationContext context = builder.build().run(args);
 
 //		ConfigurableApplicationContext context = SpringApplication.run(SpringBootArkBizApplication.class, args);
