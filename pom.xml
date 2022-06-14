@@ -59,6 +59,7 @@
 					<outputDirectory>./target</outputDirectory>
 					<bizName>spring-boot-ark-biz</bizName>
 					<webContextPath>biz</webContextPath>
+					<declaredMode>true</declaredMode>
 				</configuration>
 			</plugin>
 <!--			<plugin>-->
