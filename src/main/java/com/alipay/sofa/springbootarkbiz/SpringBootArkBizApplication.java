@@ -17,7 +17,7 @@ public class SpringBootArkBizApplication {
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(SpringBootArkBizApplication.class).web(WebApplicationType.SERVLET);
 
 		// set biz to use resource loader.
-		ResourceLoader resourceLoader = new DefaultResourceLoader(Thread.currentThread().getContextClassLoader());
+		ResourceLoader resourceLoader = new DefaultResourceLoader(SpringApplicationBuilder.class.getClassLoader());
 		builder.resourceLoader(resourceLoader);
 
 		ConfigurableApplicationContext context = builder.build().run(args);
