@@ -17,12 +17,10 @@ public class SpringBootArkBizApplication {
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(SpringBootArkBizApplication.class).web(WebApplicationType.SERVLET);
 
 		// set biz to use resource loader.
-		ResourceLoader resourceLoader = new DefaultResourceLoader(SpringApplicationBuilder.class.getClassLoader());
+		ResourceLoader resourceLoader = new DefaultResourceLoader(SpringBootArkBizApplication.class.getClassLoader());
 		builder.resourceLoader(resourceLoader);
 
 		ConfigurableApplicationContext context = builder.build().run(args);
-
-//		ConfigurableApplicationContext context = SpringApplication.run(SpringBootArkBizApplication.class, args);
 		System.out.println("SpringBootArkBizApplication start!");
 		System.out.println("SpringBootArkBizApplication spring boot version: " + SpringApplication.class.getPackage().getImplementationVersion());
 		System.out.println("SpringBootArkBizApplication classLoader: " + SpringBootArkBizApplication.class.getClassLoader());
