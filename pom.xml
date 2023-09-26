@@ -38,6 +38,37 @@
 			<artifactId>spring-boot-starter-logging</artifactId>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>com.alipay.sofa.serverless</groupId>
+			<artifactId>sofa-serverless-app-starter</artifactId>
+			<version>0.3.4</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alipay.sofa</groupId>
+			<artifactId>sofa-ark-spring-guides</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<groupId>*</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+<!--				<exclusion>-->
+<!--					<groupId>com.alipay.sofa.serverless</groupId>-->
+<!--					<artifactId>sofa-serverless-base-starter</artifactId>-->
+<!--				</exclusion>-->
+<!--				<exclusion>-->
+<!--					<groupId>com.alipay.sofa</groupId>-->
+<!--					<artifactId>spring-boot-ark-biz</artifactId>-->
+<!--				</exclusion>-->
+<!--				<exclusion>-->
+<!--					<groupId>com.alipay.sofa</groupId>-->
+<!--					<artifactId>sofa-ark-all</artifactId>-->
+<!--				</exclusion>-->
+			</exclusions>
+		</dependency>
 	</dependencies>
 
 	<build>
